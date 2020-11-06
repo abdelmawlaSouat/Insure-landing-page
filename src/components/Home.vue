@@ -10,9 +10,11 @@
           the plan that’s right for you. Ensure you and your
           loved ones are protected.
         </p>
-        <v-btn class="no-border-radius" outlined large dark>
-          View plans
-        </v-btn>
+        <a href="#">
+          <v-btn class="no-border-radius" outlined large dark>
+            View plans
+          </v-btn>
+        </a>
       </v-col>
       <v-col class="offset-md-1">
         <v-img
@@ -52,7 +54,6 @@ export default {
   position: relative;
   top: 18vh;
 }
-
 .line {
   border-top: 1px solid white;
   width: 20%;
@@ -65,7 +66,7 @@ export default {
 }
 .pattern-left {
   position: absolute !important;
-  bottom: 0;
+  top: 50vh;
   left: 0;
   width: 15%;
 }
@@ -77,7 +78,9 @@ h1 {
 p {
   font-family: "Karla" !important;
 }
-
+a {
+  text-decoration: none !important;
+}
 .no-border-radius {
   border-radius: 0 !important;
 }
