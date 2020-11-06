@@ -4,6 +4,7 @@
       <NavBar />
       <Home />
       <AboutUs />
+      <Footer />
     </v-main>
   </v-app>
 </template>
@@ -12,11 +13,12 @@
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import AboutUs from './components/AboutUs'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    NavBar, Home, AboutUs
+    NavBar, Home, AboutUs, Footer
   }
 }
 </script>

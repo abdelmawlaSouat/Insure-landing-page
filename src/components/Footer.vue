@@ -25,7 +25,7 @@
         :key="idx"
       >
         <v-list>
-          <v-subheader>{{ item.title }}</v-subheader>
+          <v-subheader>{{ item.title.toUpperCase() }}</v-subheader>
           <v-list-item
             v-for="(link, idx) in item.links"
             :key="idx"
