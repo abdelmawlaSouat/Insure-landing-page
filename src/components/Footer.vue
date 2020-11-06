@@ -1,26 +1,35 @@
 <template>
-  <v-footer>
+  <v-footer color="white">
     <!-- Social Medias -->
-    <v-row class="offset-md-2 col-md-9">
-      <v-col>
+    <v-row class="offset-md-2 col-12 col-md-9">
+
+      <v-col class="col-12 offset-4 offset-md-0 col-md-9">
         <img
         src="@/assets/logo.svg"
         alt="Insure Logo"
         width="100"
-      >
+        >
       </v-col>
-      <a href="#" v-for="(icon, idx) in socialIcons" :key="idx">
-        <v-img
-          :src="require(`@/assets/${icon.src}`)"
-          :alt="icon.alt"
-          class="ml-4"
-        ></v-img>
-      </a>
+
+      <v-row class="offset-3 offset-md-0">
+        <a
+          href="#"
+          v-for="(icon, idx) in socialIcons"
+          :key="idx"
+        >
+          <v-img
+            :src="require(`@/assets/${icon.src}`)"
+            :alt="icon.alt"
+            class="ml-4"
+          ></v-img>
+        </a>
+      </v-row>
     </v-row>
+
     <!-- Links -->
     <v-row class="offset-md-2 col-md-9">
       <v-col
-        class="col-md-3"
+        class="offset-3 offset-md-0  col-md-3"
         v-for="(item, idx) in links"
         :key="idx"
       >
@@ -110,6 +119,7 @@ a {
 .attribution {
     font-size: 12px;
     text-align: center;
+    margin-top: 5vh;
     width: 100%;
 }
 .attribution a {

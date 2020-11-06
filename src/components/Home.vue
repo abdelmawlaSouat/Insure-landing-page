@@ -1,7 +1,10 @@
 <template>
   <div class="home my-4">
     <v-row class="offset-md-2 col-md-10">
-      <v-col class="col-md-5">
+      <v-col
+        class="offset-1 offset-md-0 col-md-5 col-9 mb-10"
+        align="center"
+      >
         <div class="line my-10"></div>
         <h1>Humanizing your insurance.</h1>
         <p class="my-5">
@@ -44,6 +47,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+@media only screen and (max-width: 600px) {
+  .intro-img {
+    position: relative !important;
+    top: 0 !important;
+    left: 1.5vh;
+}
+}
 
 .home {
   background-color: var(--dark-violet) !important;

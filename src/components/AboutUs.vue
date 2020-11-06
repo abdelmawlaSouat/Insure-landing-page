@@ -3,17 +3,18 @@
 
     <!-- Title -->
     <v-row class="offset-md-2">
-      <v-col>
+      <v-col class="offset-1 col-11 offset-md-0">
         <div class="line"></div>
-        <h2 class="custom-title my-10">We’re different</h2>
+        <h2 class="custom-title text-h3 my-10">We’re different</h2>
       </v-col>
     </v-row>
 
     <!-- About Insure -->
-    <v-row class="offset-md-2 col-md-9">
+    <v-row class="offset-md-2 col-md-9 col-12">
       <v-col
         v-for="(item, idx) in items" :key="idx"
-        class="col-md-4"
+        class="offset-1 col-11 offset-md-0 col-md-4"
+        align="center"
       >
         <v-card flat>
           <v-img
@@ -29,13 +30,18 @@
 
     <!-- Find Out Div -->
     <v-row
-      class="find-out-div bg-dark-violet offset-md-2 col-md-9"
+      class="find-out-div py-5 bg-dark-violet offset-md-2 col-md-9"
       align="center"
     >
-      <v-col class="offset-md-1 col-md-7">
-        <h4 class="custom-title">Find out more <br> about how we work</h4>
+      <v-col class="offset-md-1 offset-1 col-12 col-md-7">
+        <h4 class="custom-title">
+          Find out more <br> about how we work
+        </h4>
       </v-col>
-      <v-col class="offset-md-2">
+      <v-col
+        class="offset-md-2"
+        align="center"
+      >
         <a href="#">
           <v-btn class="no-border-radius" outlined large dark>
             HOW WE WORK
@@ -73,13 +79,19 @@ export default {
           it.`
         }
       ]
-
     }
   }
 }
 </script>
 
 <style lang="css" scoped>
+@media only screen and (max-width: 600px) {
+  .about-us {
+    margin-top: 10vh !important;
+    margin-bottom: 10vh !important;
+  }
+}
+
 .about-us {
   margin-top: 30vh;
   margin-bottom: 20vh;
