@@ -38,7 +38,7 @@
       <v-col class="offset-md-2">
         <a href="#">
           <v-btn class="no-border-radius" outlined large dark>
-            View plans
+            HOW WE WORK
           </v-btn>
         </a>
       </v-col>
@@ -102,6 +102,11 @@ h4 {
 p {
   font-size: 16px;
   opacity: 0.7;
+}
+.pattern-right {
+  position: absolute;
+  right: 12vh;
+  width: 25%;
 }
 .no-border-radius {
   border-radius: 0 !important;
